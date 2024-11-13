@@ -69,93 +69,126 @@ using namespace std;
             
             //extreme print
             
-            void extreme(int arr[],int size){
-            	int left =0;
-            	int right=size-1;
-            	while(left<=right){
-            		if(left+right==size-1){
-            				swap(arr[left],arr[right]);
-					}
+            // void extreme(int arr[],int size){
+            // 	int left =0;
+            // 	int right=size-1;
+            // 	while(left<=right){
+            // 		if(left+right==size-1){
+            // 				swap(arr[left],arr[right]);
+			// 		}
             	
-				}
-			}
+			// 	}
+			// }
+
+            void extreme(int arr[],int size){
+                int left =0;
+                int right=size-1;
+                while (left<=right)
+                {
+                    if(left==right){
+                        cout<<arr[left]<<" ";
+                        left++;
+                    right--;
+                    }else{
+                        cout<<arr[left]<<" "<<arr[right];
+                        left++;
+                    right--;
+                    }
+                    
+                }
+                
+            }
 int main(){
-    int arr[5];
-    cout<<sizeof(arr);
-    bool flag[35];
+//     int arr[5];
+//     cout<<sizeof(arr);
+//     bool flag[35];
 
-    cout<<sizeof(flag);
-    cout<<" this is the garbage value: "<<arr[0]<<endl;
-    cout<<&arr[0];
-    //garbage value and the address is different 
-    int a;
-    cout<<"this is without a :"<<a<<endl;
-    cout<<"addressof operator"<<&a<<endl;
+//     cout<<sizeof(flag);
+//     cout<<" this is the garbage value: "<<arr[0]<<endl;
+//     cout<<&arr[0];
+//     //garbage value and the address is different 
+//     int a;
+//     cout<<"this is without a :"<<a<<endl;
+//     cout<<"addressof operator"<<&a<<endl;
 
-    int bh[10];
-     cout<<"this is without a :"<<bh<<endl;
-    cout<<"addressof operator"<<&bh<<endl;
+//     int bh[10];
+//      cout<<"this is without a :"<<bh<<endl;
+//     cout<<"addressof operator"<<&bh<<endl;
 
        
-        // int c[5]; continouse memory allocation 
-        // for(int i=0;i<5;i++){
-        //     cout<<" the address of i is:"<<&c[i]<<endl;
-        // }
-            // int ch[5];
-            // for(int i =0;i<5;i++){
-            //     cout<<" enter the elemnt at "<<i<<"it postion::";
-            //     cin>>ch[i];
-            //     cout<<endl;
-            // }
-cout<<"******************************************"<<endl;
+//         // int c[5]; continouse memory allocation 
+//         // for(int i=0;i<5;i++){
+//         //     cout<<" the address of i is:"<<&c[i]<<endl;
+//         // }
+//             // int ch[5];
+//             // for(int i =0;i<5;i++){
+//             //     cout<<" enter the elemnt at "<<i<<"it postion::";
+//             //     cin>>ch[i];
+//             //     cout<<endl;
+//             // }
+// cout<<"******************************************"<<endl;
 
-                        // int dh[10];
-                        // int sum =0;
-                        // for(int i =0;i<10;i++){
-                        //     int temp;
-                        //     cout<<"enter the "<<i<<"th value";
-                        //     cin>>dh[i];
-                        //     sum=(sum+dh[i]);
-                        // }
-                        // cout<<" the sum is : "<<sum;
- //linerar search 
+//                         // int dh[10];
+//                         // int sum =0;
+//                         // for(int i =0;i<10;i++){
+//                         //     int temp;
+//                         //     cout<<"enter the "<<i<<"th value";
+//                         //     cin>>dh[i];
+//                         //     sum=(sum+dh[i]);
+//                         // }
+//                         // cout<<" the sum is : "<<sum;
+//  //linerar search 
 
 
 
-                //     
-                //     int key =10;
-                //     int flagg =0;
-                //     for(int i =0;i<5;i++){
-                //         if(arr[i]==key){
-                //             cout<<"element is founded";
-                //         	// flag =1;
-                //            flagg =1;
-                //             break;
-                //         }
-                //     }
-                //     if(flag==0){
-                //     	cout<<" key is not found";
-				// 	}
+//                 //     
+//                 //     int key =10;
+//                 //     int flagg =0;
+//                 //     for(int i =0;i<5;i++){
+//                 //         if(arr[i]==key){
+//                 //             cout<<"element is founded";
+//                 //         	// flag =1;
+//                 //            flagg =1;
+//                 //             break;
+//                 //         }
+//                 //     }
+//                 //     if(flag==0){
+//                 //     	cout<<" key is not found";
+// 				// 	}
 
-				// 	int farr[5]={1,2,3,4,5};
-				// 	bool chh= linearsearch(farr,5,5);
-				// 	cout<<chh;
+// 				// 	int farr[5]={1,2,3,4,5};
+// 				// 	bool chh= linearsearch(farr,5,5);
+// 				// 	cout<<chh;
 
-                //  int ghh[]={1,1,1,0,0};
-                //     countonezero(ghh,5);
-                    int ea[6]={1,-1,6,8,10,10};
-//                  int c=  smallest(ea,5);
-                  cout<<endl;
+//                 //  int ghh[]={1,1,1,0,0};
+//                 //     countonezero(ghh,5);
+//                     int ea[6]={1,-1,6,8,10,10};
+// //                  int c=  smallest(ea,5);
+//                   cout<<endl;
+//                     cout<<endl;
+
+// 					cout<<endl;
+// 					disp(ea,6);
+// 					cout<<endl;
+// //					
+// //                    reversh(ea,6);
+// //                    disp(ea,6);
+
+
+
+				cout<<"********new**********"<<endl;
+
+                    
+                   int  zar[5]={10,20,30,40,50};
+                    int war[6]={10,20,30,40,50,60};
+                    cout<<"****"<<endl;
+                   
+                    extreme(zar,5);
                     cout<<endl;
+                    extreme(war,6);
 
-					cout<<endl;
-					disp(ea,6);
-					cout<<endl;
-//					
-//                    reversh(ea,6);
-//                    disp(ea,6);
-				extreme(ea,6);
-                  disp(ea,6);
+                   
+                    cout<<endl;
                     
 
 
