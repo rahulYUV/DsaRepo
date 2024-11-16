@@ -98,6 +98,110 @@ using namespace std;
                 }
                 
             }
+
+            int unique(int arr[],int size){
+                    int ans=arr[0];
+                    for(int i=1;i<size;i++){
+                        ans =ans^arr[i];
+                    }     
+                    cout<<ans;       
+                }
+
+                void dispPair(int arr[],int n){
+                    for(int i =0;i<n;i++){
+                        for(int j =0;j<n;j++){
+                            cout<<arr[i]<<arr[j]<<endl;
+
+                        }
+                        
+                    }
+                }
+                int zeroand1(int arr[],int size){
+                    int zero =0;
+                    int one =0;
+                    for(int i =0;i<size;i++){
+                        if(arr[i]==0){
+                            zero++;
+                        }
+                        else{
+                            one++;
+                        }
+                    }
+                    for(int j=0;j<zero;j++){
+                        arr[j]=0;
+                        
+                    }
+                    int onee = (one+zero)-zero;
+                    for(int k = one;k<(one+zero);k++){
+                        arr[k]=1;
+
+                    }
+
+                    for(int i =0;i<size;i++){
+                        cout<<arr[i]<<endl;
+                    }
+                  
+                }
+
+                // count zero and one 
+                void sortzero(int arr[],int size){
+                    int bigge = 0;
+                    for(int i =0;i<size;i++){
+                        if(arr[i]<arr[bigge]){
+                            swap(arr[bigge],arr[i]);
+                            bigge++;
+                        }
+                    }
+                    disp(arr,5);
+                }
+
+                //shift by one 
+                void shift(int arr[], int size){
+                    int temp = arr[size-1];
+                     
+                    for(int i = size-1;i>=1;i--){
+                        arr[i]= arr[i-1];
+                    }
+                    arr[0] = temp;
+                    
+
+
+
+                }
+                int missing(int arr[],int size){
+                    for(int i =1;i<size;i++){
+                        if((arr[i]-arr[i-1])==10){
+
+
+                        }
+                        else{
+                            return (arr[i]-10);
+                        }
+                    }
+                }
+                int missopt(int arr[],int size){
+                    int sum = (size+ (size+1))/2;
+                    int sum2=0;
+                    for(int i= 0;i<size;i++){
+                        sum2 =+arr[i];
+
+                    }
+                    return sum-sum2;
+                }
+                int xor11(int arr[],int size){
+                    int xor1 = 0;
+                    int xor2 =0;
+                    for(int i =0;i<size-1;i++){
+                        xor2 = xor2^arr[i];
+                        xor1 = xor1 ^ (i+1);
+
+                    }
+                    xor1 = xor1 ^ size;
+                    int ans = xor1^xor2;
+                    return ans;
+
+
+                }
 int main(){
 //     int arr[5];
 //     cout<<sizeof(arr);
@@ -176,21 +280,33 @@ int main(){
 
 
 
-				cout<<"********new**********"<<endl;
+				// cout<<"********new**********"<<endl;
 
                     
-                   int  zar[5]={10,20,30,40,50};
-                    int war[6]={10,20,30,40,50,60};
-                    cout<<"****"<<endl;
+                //    int  zar[5]={10,20,30,40,50};
+                //     int war[6]={10,20,30,40,50,60};
+                //     cout<<"****"<<endl;
                    
-                    extreme(zar,5);
-                    cout<<endl;
-                    extreme(war,6);
+                //     extreme(zar,5);
+                //     cout<<endl;
+                //     extreme(war,6);
 
                    
-                    cout<<endl;
+                //     cout<<endl;
                     
+            //     int arr[]={10,20,30};
+            //   dispPair(arr,3);
 
+            // int crr[]={1,1,1,0,0,0,0};
+            // countonezero(crr,7);
+                // /sort o and 1
+                int arr[5]={1,2,4,5};
+                // sortzero(arr,5);
+                cout<<" here is the shift";
+                // shift(arr,5);
+                // disp(arr,5);
+                int miss =xor11(arr,5);
+                cout<<"missing element is : "<<miss;
 
 
 
