@@ -13,9 +13,25 @@ void addatbegin(){
     cin>>temp->data;
     temp->next=root;
     root=temp;
+    cout<<"data added success";
 
 }
+int disp(){
+   struct node* temp = root;
+   while(temp->next!=NULL){
+    cout<<"-> "<<temp->data;
+    temp=temp->next;
+
+   }
+    
+}
+
+
+
 int main(){
-    addatbegin();
+   
+
+   addatbegin();
+    disp();
     return 0;
 }

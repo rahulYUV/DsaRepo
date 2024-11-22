@@ -34,6 +34,7 @@ using namespace std;
                 cout<<zero<<"and one is :"<<one;
 
             }
+	// THE library is <limits.h>
 
             int smallest(int arr[],int size){
                 int small = INT_MAX;
