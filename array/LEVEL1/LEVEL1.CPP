@@ -34,7 +34,6 @@ using namespace std;
                 cout<<zero<<"and one is :"<<one;
 
             }
-	// THE library is <limits.h>
 
             int smallest(int arr[],int size){
                 int small = INT_MAX;
@@ -212,7 +211,7 @@ int main(){
 //     cout<<" this is the garbage value: "<<arr[0]<<endl;
 //     cout<<&arr[0];
 //     //garbage value and the address is different 
-//     int a;
+//     int a;   
 //     cout<<"this is without a :"<<a<<endl;
 //     cout<<"addressof operator"<<&a<<endl;
 
