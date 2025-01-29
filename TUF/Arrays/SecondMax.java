@@ -1,5 +1,5 @@
 
-package StriveratoZ.Arrays;
+package TUF.Arrays;
 import java.util.Arrays;
 public class SecondMax {
     
