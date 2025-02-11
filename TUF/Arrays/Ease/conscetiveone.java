@@ -8,6 +8,14 @@ public class conscetiveone {
         System.out.println(MaximumStreak);
 
     }
+    static int maxii(int a , int b ){
+        if(a>b){
+            return a;
+        }
+        else{
+            return b;
+        }
+    }
     static int maxiStreak(int []arr){
         int n = arr.length;
         int maxi =0;
@@ -20,7 +28,7 @@ public class conscetiveone {
                 count=0;
 
             }
-            maxi= Math.max(maxi,count);
+            maxi= maxii(maxi,count);
 
         }
         return maxi;
