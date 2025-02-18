@@ -6,10 +6,30 @@ public class Kadane {
     public static void main(String[] args) {
         // Test cases
         int[] nums = {1, -2, 2, -2, 3, 4, 5, -7, 7};
-        System.out.println("Optimal Approach Result: " + optimalKadane(nums));
+        // System.out.println("Optimal Approach Result: " + optimalKadane(nums));
+        System.out.println("Optimal Approach Result: revesion ++; " + optimalKadane(nums));
         System.out.println("Brute Force Result: " + bruteForceKadane(nums));
     }
     
+            // print s subArrauy
+            // the optimal 
+
+            public static int Optimal(int[] arr){
+                int size = arr.length;
+                int MaxSum =Integer.MIN_VALUE;
+                for(int i =0;i<size;i++){
+                    int currSum =+ arr[i];
+                    MaxSum = Math.max(currSum,MaxSum);
+                    if(currSum<0){
+                        currSum = 0;
+
+                    }
+                
+                }
+                return MaxSum;
+
+            }
+
     // Optimal approach using Kadane’s Algorithm (O(n) Time Complexity)
     public static int optimalKadane(int[] nums) {
         if (nums.length == 0) return 0; // Edge case: Empty array
