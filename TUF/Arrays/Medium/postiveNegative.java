@@ -7,13 +7,17 @@ public class postiveNegative {
         public static void main(String[] args) {
                         int nums[]={3,1,-2,-5,1,-7};
                         //    reArrange(nums);
-                        lessoptimal(nums);
-                        System.out.println(
+                        // lessoptimal(nums);
+                        // System.out.println(
 
-                        "the optimal is "+Arrays.toString(nums)
-                        );
+                        // "the optimal is "+Arrays.toString(nums)
+                        // );
+
+                // System.out.println(Revision(nums));
+                Revision(nums);
             
         }    
+
 
 
         public static void lessoptimal(int[] ans){
@@ -33,6 +37,30 @@ public class postiveNegative {
             }
             ans = newAns;
             
+        }
+
+
+        public static void Revision(int[] nums){
+            int length = nums.length;
+            int ans[]= new int[length];
+            int pos=0;
+            int neg =1;
+            for(int i =0;i< length;i++){
+                if(nums[i]>=0){
+                    ans[pos] = nums[i];
+                    pos +=2;
+
+                }
+                else{
+                    ans[neg] = nums[i];
+                    neg +=2;
+
+                }
+
+                System.out.println(Arrays.toString(ans));
+            }
+
+
         }
     public static void reArrange(int [] nums){
         int length = nums.length;
