@@ -6,9 +6,11 @@ public class Kadane {
     public static void main(String[] args) {
         // Test cases
         int[] nums = {1, -2, 2, -2, 3, 4, 5, -7, 7};
-        // System.out.println("Optimal Approach Result: " + optimalKadane(nums));
-        System.out.println("Optimal Approach Result: revesion ++; " + optimalKadane(nums));
-        System.out.println("Brute Force Result: " + bruteForceKadane(nums));
+        System.out.println("Optimal Approach Result: " + optimalKadane(nums));
+        // System.out.println("Optimal Approach Result: revesion ++; " + optimalKadane(nums));
+        // System.out.println("Brute Force Result: " + bruteForceKadane(nums));
+                    // SubArray(nums);
+        System.out.println(reVision(nums));
     }
     
             // print s subArrauy
@@ -28,6 +30,22 @@ public class Kadane {
                 }
                 return MaxSum;
 
+            }
+
+
+            // to print sub Array possible
+
+            static void SubArray(int[] nums){
+                int length = nums.length;
+                for(int i =0;i< length;i++){
+                    for(int j =0;j< length;j++){
+                        for(int k = j ;k<=j;k++){
+                            System.out.print(nums[k]);
+                        }
+                        System.out.println();
+                    }
+                    System.out.println();
+                }
             }
 
     // Optimal approach using Kadane’s Algorithm (O(n) Time Complexity)
@@ -83,4 +101,22 @@ public class Kadane {
     * 4. Edge cases me empty array aur pure negative numbers wale arrays shamil hote hain.
     * 5. If condition (sum < 0) isliye use hoti hai kyunki negative sum maximum subarray sum ko kam kar sakta hai. Isliye, usko reset karna better hota hai taaki naye subarray ka calculation shuru kiya ja sake.
     */
+
+
+
+    //** REVISION  */
+
+    public static int reVision(int[] nums){
+        int length = nums.length;
+        int sum = 0;
+        int maxi = Integer.MIN_VALUE;
+        for(int i =0;i<length;i++){
+            sum = 0;
+            for(int j =i;j<length;j++){
+                sum  = sum+ nums[j];
+                maxi = Math.max(maxi, sum);
+            }
+        }
+        return maxi;
+    }
 }

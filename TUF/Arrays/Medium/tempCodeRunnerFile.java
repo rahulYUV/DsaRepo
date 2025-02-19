@@ -1,1 +1,1 @@
-nums
+ System.out.println("Optimal Approach Result: " + optimalKadane(nums));
