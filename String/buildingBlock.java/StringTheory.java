@@ -4,19 +4,20 @@ import java.util.Scanner;
 public class StringTheory {
     public static void main(String[] args) {
         // String Comparison
-        stringComparison();
+        // stringComparison();
         
         // String Concatenation
-        stringConcatenation();
+        // stringConcatenatkion();
         
         // String Operations
-        stringOperations();
+        // stringOperations();
         
-        // Mutable Strings (StringBuffer & StringBuilder)
-        mutableStrings();
+        // // Mutable Strings (StringBuffer & StringBuilder)
+        // mutableStrings();
         
-        // User Input Handling
-        userInputHandling();
+        // // User Input Handling
+        // userInputHandling();
+        Assignment();
     }
     
     // Method to demonstrate string comparison
@@ -101,11 +102,11 @@ public class StringTheory {
         // int num = sc.nextInt();
         // System.out.println("The int is: " + num);
         
-        // Taking a string input
+        // // Taking a string input
         // System.out.println("Enter a String: ");
         // String input = sc.next();
         
-        sc.nextLine(); // Handling buffer problem
+        // sc.nextLine(); // Handling buffer problem
         
         // Taking a full line input
         // System.out.println("Enter a full line of text: ");
@@ -113,6 +114,24 @@ public class StringTheory {
         // System.err.println(line); // Printing in red
         
         sc.close();
+    }
+
+    public static void Assignment(){
+                    //         Assignment:
+                    // 1. Write a program to compare two strings ignoring case sensitivity.
+                    // 2. Implement a function that reverses a given string.
+                    // 3. Write a method to check if a given string is a palindrome.
+                    // 4. Create a program that counts the occurrences of each character in a string.
+                    // 5. Implement a function to remove duplicate characters from a string.
+
+                    String str = "Java";
+                    String str1 = new String("Java");
+                    if(str==(str1)){
+                        System.out.println("they are equal ");
+
+                    }else{
+                        System.out.println("they are not equal hioho");
+                    }
     }
 }
 
@@ -123,6 +142,9 @@ Assignment:
 3. Write a method to check if a given string is a palindrome.
 4. Create a program that counts the occurrences of each character in a string.
 5. Implement a function to remove duplicate characters from a string.
+
+
+        
 
 Interview Questions:
 1. What is the difference between `==` and `.equals()` in Java?
