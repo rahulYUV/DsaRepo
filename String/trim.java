@@ -2,9 +2,27 @@ package String;
 
 public class trim {
     public static void main(String[] args) {
-        String s = "   Hello user!! Welcome  ";
-              trimm(s);
+        String s = "   Hello uhser!! Welcomeh ";
+            //   trimm(s);
+
+            replace(s);
+
     }
+
+
+        public static void replace(String st){
+            char[] c = st.toCharArray();
+            for(int i =0;i<c.length;i++){
+                        if(c[i] == 'h' ||  c[i] == 'H' ){
+                            c[i]= 'r';
+                        }
+            }
+
+            String result = new String(c);
+            System.out.println(result);
+        }
+
+
         public static void trimm(String st){
             
             char[] c = st.toCharArray();
