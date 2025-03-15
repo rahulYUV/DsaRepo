@@ -1,8 +1,6 @@
-package TUF.Arrays.Medium;
 
+package TUF;
 
-
-import java.util.*;
 
 import java.util.*;
 

@@ -18,8 +18,8 @@ public class ZeroMatrix {
         }
     }
     public static void zero(int[][] nums , int n, int  m ){
-           int [] row = new int[n];
-           int [] col = new int[m];
+         
+           int [] col = new int[m];  int [] row = new int[n];
            for(int i =0;i< n;i++) {
             for(int j =0;j<m;j++){
                 if(nums[i][j]==0){

@@ -126,12 +126,22 @@ public class StringTheory {
 
                     String str = "Java";
                     String str1 = new String("Java");
-                    if(str==(str1)){
+                    // if(str==(str1)){
+                    //     System.out.println("they are equal ");
+
+                    // }else{
+                    //     System.out.println("they are not equal hioho");
+                    // }
+                    String hp = new String("java");
+                    String ph = new String("java");
+                      if(ph.equals(hp)){
                         System.out.println("they are equal ");
 
                     }else{
                         System.out.println("they are not equal hioho");
                     }
+
+
     }
 }
 

@@ -8,13 +8,13 @@ public class battle {
                // reversh an array ;
                     int[] nums ={10,20,30,40,500,1};
 
-                    System.out.println(kitneEvenNohain(nums));
+                    // System.out.println(kitneEvenNohain(nums));
                     
                     // rev(nums);
                     
         }
 
-
+            
         static int kitneEvenNohain(int[] arr){
             int count=0;
             int length = arr.length;
